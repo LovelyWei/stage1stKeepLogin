@@ -14,7 +14,7 @@ while 1:
         now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     except:
         time.sleep(60)
-    if res.text.find('Aisina') != -1:
+    if res.text.find('Test') != -1: # 替换成你的用户名
         print('['+now+'] '+'Logined')
         time.sleep(random.randint(120,480))
         if error!=0:
